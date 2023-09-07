@@ -1,12 +1,12 @@
-import { AppLayout } from 'components/layouts';
-import { Outlet } from 'react-router-dom';
+import { AppLayout } from 'components/layouts'
+import { Outlet } from 'react-router-dom'
 
 function App() {
-	return (
-		<AppLayout>
-			<Outlet />
-		</AppLayout>
-	);
+  return (
+    <AppLayout>
+      <Outlet />
+    </AppLayout>
+  )
 }
 
-export default App;
+export default App

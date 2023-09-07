@@ -1,11 +1,11 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom'
 function Auth() {
-	return (
-		<div>
-			Hello auth
-			<Outlet />
-		</div>
-	);
+  return (
+    <div>
+      Hello auth
+      <Outlet />
+    </div>
+  )
 }
 
-export default Auth;
+export default Auth

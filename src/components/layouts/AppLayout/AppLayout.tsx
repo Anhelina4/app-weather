@@ -1,12 +1,17 @@
 import { type ReactNode } from 'react'
-
+import { Header } from 'components'
 export interface Props {
-    children: ReactNode
+  children: ReactNode
 }
 
 const AppLayout = (props: Props) => {
-    const { children } = props
-    return <div>AppLayout{children}</div>
+  const { children } = props
+  return (
+    <div>
+      <Header />
+      {children}
+    </div>
+  )
 }
 
 export default AppLayout
