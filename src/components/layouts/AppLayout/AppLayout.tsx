@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react'
-import { Header } from 'components'
+import { Header } from 'components/bundles'
 export interface Props {
   children: ReactNode
 }
