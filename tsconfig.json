@@ -1,6 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "src/",
+    "paths": {
+      "components/*": [
+        "components/*"
+      ],
+      "domains/*": [
+        "domains/*"
+      ],
+      "navigators/*": [
+        "navigators/*"
+      ],
+      "pages/*": [
+        "pages/*"
+      ],
+      "styles/*": [
+        "styles/*"
+      ],
+      "__assets__/*": [
+        "__assets__/*"
+      ],
+      "__constants__/*": [
+        "__constants__/*"
+      ]
+    },
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",

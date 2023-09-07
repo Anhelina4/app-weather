@@ -46,18 +46,18 @@
     "rules": {
         "linebreak-style": "off",
         // Configure prettier
-        "prettier/prettier": [
-            "error",
-            {
-                "printWidth": 80,
-                "endOfLine": "lf",
-                "singleQuote": true,
-                "tabWidth": 2,
-                "indentStyle": "space",
-                "useTabs": true,
-                "trailingComma": "es5"
-            }
-        ],
+        // "prettier/prettier": [
+        //     "error",
+        //     {
+        //         "printWidth": 80,
+        //         "endOfLine": "lf",
+        //         "singleQuote": true,
+        //         "tabWidth": 2,
+        //         "indentStyle": "space",
+        //         "useTabs": true,
+        //         "trailingComma": "es5"
+        //     }
+        // ],
         // Disallow the `any` type.
         "@typescript-eslint/no-explicit-any": "warn",
         "@typescript-eslint/ban-types": [
