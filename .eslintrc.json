@@ -46,21 +46,21 @@
     "rules": {
         "linebreak-style": "off",
         // Configure prettier
-        // "prettier/prettier": [
-        //     "error",
-        //     {
-        //       "semi": false,
-	    // "singleQuote": true,
-	    // "trailingComma": "none",
-	    // "bracketSpacing": true,
-	    // "quoteProps": "as-needed",
-	    // "printWidth": 80,
-	    // "tabWidth": 2,
-	    // "useTabs": false,
-	    // "bracketSameLine": true,
-	    // "endOfLine": "lf"
-        //     }
-        // ],
+        "prettier/prettier": [
+            "error",
+            {
+              "semi": false,
+	    "singleQuote": true,
+	    "trailingComma": "none",
+	    "bracketSpacing": true,
+	    "quoteProps": "as-needed",
+	    "printWidth": 80,
+	    "tabWidth": 2,
+	    "useTabs": false,
+	    "bracketSameLine": true,
+	    "endOfLine": "lf"
+            }
+        ],
         // Disallow the `any` type.
         "@typescript-eslint/no-explicit-any": "warn",
         "@typescript-eslint/ban-types": [

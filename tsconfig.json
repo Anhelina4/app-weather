@@ -8,6 +8,9 @@
       "domains/*": [
         "domains/*"
       ],
+      "helpers/*": [
+        "helpers/*"
+      ],
       "navigators/*": [
         "navigators/*"
       ],
