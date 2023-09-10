@@ -1,10 +1,7 @@
-import { Outlet, redirect } from 'react-router-dom'
-
-import { APP_PATHS } from 'navigators'
 import { AppLayout } from 'components/layouts'
+import { Outlet } from 'react-router-dom'
 
 function App() {
-  redirect(`${APP_PATHS.app.DASHBOARD}/`)
   return (
     <AppLayout>
       <Outlet />

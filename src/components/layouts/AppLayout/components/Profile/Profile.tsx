@@ -1,27 +1,24 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react'
+import {
+  UserNavType,
+  UserType
+} from 'components/layouts/AppLayout/AppLayout.types'
 
 import { Fragment } from 'react'
 import { getClassNames } from 'helpers'
 
-export type User = {
-  imageUrl: string
-  email: string
-  name: string
-}
-export type UserNav = {
-  name: string
-  href: string
-}
-export interface Props {
-  user: User
-  userNavigation: Array<UserNav>
+export interface ProfileProps {
+  user: UserType
+  userNavigation: Array<UserNavType>
   isSmall?: boolean
 }
-const Profile = (props: Props) => {
+
+const Profile = (props: ProfileProps) => {
   const { user, userNavigation, isSmall } = props
 
   return (
     <>
+      {/* Desktop version */}
       {!isSmall ? (
         <Menu as="div" className="relative">
           <div>
@@ -47,7 +44,7 @@ const Profile = (props: Props) => {
             <Menu.Items
               className="absolute right-0 z-10 mt-2 w-48 
         origin-top-right rounded-md bg-gray-800 py-1 shadow-lg  focus:outline-none">
-              {userNavigation?.map((item: UserNav) => (
+              {userNavigation?.map((item: UserNavType) => (
                 <Menu.Item key={item.name}>
                   {({ active }: { active: boolean }) => (
                     <a
@@ -65,6 +62,7 @@ const Profile = (props: Props) => {
           </Transition>
         </Menu>
       ) : (
+        // Mobile version
         <div className="border-t border-gray-700 pb-3 pt-4">
           <div className="flex items-center px-5">
             <div className="flex-shrink-0">
