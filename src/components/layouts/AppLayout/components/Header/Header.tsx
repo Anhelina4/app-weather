@@ -21,34 +21,32 @@ const Header = (props: HeaderProps) => {
     <Disclosure as="nav" className="">
       {({ open }: { open: boolean }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center md:justify-end">
-              {/* Desktop version */}
-              <div className="hidden md:block">
-                <div className="ml-4 flex items-center gap-4">
-                  <LocationSearch />
-                  <MeasureSwitch />
-                  <Profile user={user} userNavigation={userNavigation} />
-                </div>
-              </div>
-              {/* Mobile version */}
-              <div className="flex w-full justify-between md:hidden">
+          <div className="flex h-16 items-center md:justify-end">
+            {/* Desktop version */}
+            <div className="hidden md:block">
+              <div className="ml-4 flex items-center gap-4">
                 <LocationSearch />
-                <div className="flex gap-4 ml-4">
-                  <MeasureSwitch />
-                  {/* Close btn */}
-                  <Disclosure.Button
-                    className="  items-center rounded-md
+                <MeasureSwitch />
+                <Profile user={user} userNavigation={userNavigation} />
+              </div>
+            </div>
+            {/* Mobile version */}
+            <div className="flex w-full justify-between md:hidden">
+              <LocationSearch />
+              <div className="flex gap-4 ml-4">
+                <MeasureSwitch />
+                {/* Close btn */}
+                <Disclosure.Button
+                  className="  items-center rounded-md
               justify-center bg-gray-700 p-2 text-gray-400 
               hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 
               focus:ring-white">
-                    {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                    )}
-                  </Disclosure.Button>
-                </div>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
               </div>
             </div>
           </div>

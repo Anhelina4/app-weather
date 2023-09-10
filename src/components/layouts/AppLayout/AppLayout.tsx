@@ -7,6 +7,7 @@ export interface Props {
 const AppLayout = (props: Props) => {
   const { children } = props
 
+  // TODO: change to real data
   const user = {
     name: 'Tom Cook',
     email: 'tom@example.com',
@@ -21,13 +22,13 @@ const AppLayout = (props: Props) => {
   ]
 
   return (
-    <>
+    <div className="container mx-auto h-full py-6 sm:px-6 lg:px-8">
       <Header user={user} userNavigation={userNavigation} />
 
-      <main>
-        <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">{children}</div>
+      <main className="h-fit">
+        <div>{children}</div>
       </main>
-    </>
+    </div>
   )
 }
 
