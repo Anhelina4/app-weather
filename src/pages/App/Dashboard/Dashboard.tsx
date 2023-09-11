@@ -1,12 +1,12 @@
 import { Card } from 'components'
+import { WeatherTimeline } from 'domains/Weather/components'
 
 const Dashboard = () => {
   return (
     <div className="container">
       <div className="grid grid-cols-3 grid-rows-3 gap-4 grid-flow-col">
-        <Card className="col-span-2 row-span-1">
-          Weather by current or choosen location
-        </Card>
+        <WeatherTimeline />
+
         <Card className="col-span-2 row-span-1">
           Metrics chart by current or choosen location
         </Card>
