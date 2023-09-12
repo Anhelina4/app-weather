@@ -1,6 +1,6 @@
-import { Card } from 'components'
+import { Card, Sun } from 'components'
+
 import { TemperatureByTime } from 'domains/Weather/components'
-import sun from '__assets__/sun.svg'
 
 const WeatherTimeline = () => {
   return (
@@ -8,7 +8,8 @@ const WeatherTimeline = () => {
       {/* first row */}
       <div className="flex justify-between align-center mb-8">
         <div className="flex align-center justify-center gap-16">
-          <img src={sun} height="80px" width="80px" />
+          <Sun size="80px" className="text-yellow" />
+
           <div>
             <h1 className="mb-1">Berlin</h1>
             <h5>Germany</h5>
