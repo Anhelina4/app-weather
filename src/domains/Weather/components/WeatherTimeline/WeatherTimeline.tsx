@@ -6,10 +6,10 @@ const WeatherTimeline = () => {
   return (
     <Card className="col-span-2 row-span-1">
       {/* first row */}
-      <div className="flex gap-6 md:gap-12 md:mb-8">
+      <div className="flex items-center gap-6 md:gap-12 md:mb-8">
         <Sun size="80px" className="fill-white" />
         <div className="flex flex-col md:flex-row md:gap-8 w-full">
-          <div className="flex gap-8 lg:mb-0 mb-8">
+          <div className="flex gap-16 lg:mb-0 mb-8">
             <div className="flex flex-col">
               <span className="mb-1 h3 md:h1 inline-block">Berlin</span>
               <span className="h5 inline-block">Germany</span>
@@ -19,7 +19,7 @@ const WeatherTimeline = () => {
               <span className="h5 inline-block">Temperature</span>
             </div>
           </div>
-          <div className="flex gap-8 lg:mb-0 mb-8">
+          <div className="flex gap-16 lg:mb-0 mb-8">
             <div>
               <span className="flex items-baseline mb-1 h3 md:h1">
                 24<h5>%</h5>
