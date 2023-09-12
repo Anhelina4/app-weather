@@ -20,27 +20,30 @@ body, #root {
   @apply text-white rounded-xl font-normal
 }
 
-h1 {
-  @apply text-4xl font-normal tracking-wide
+h1, .h1 {
+  @apply text-4xl  tracking-wide
 }
-h2 {
-  @apply text-3xl font-normal tracking-wide
+h2, .h2 {
+  @apply text-3xl  tracking-wide
 }
-h3 {
-  @apply text-2xl font-normal tracking-wide
+h3, .h3 {
+  @apply text-2xl  tracking-wide
 }
-h4 {
-  @apply text-xl font-normal tracking-wide
+h4, .h4 {
+  @apply text-xl  tracking-wide
 }
-h5 {
-  @apply text-lg font-normal tracking-wide
+h5, .h5 {
+  @apply text-lg  tracking-wide
 }
-h6 {
-  @apply text-base font-normal tracking-wide
+h6, .h6 {
+  @apply text-base  tracking-wide
 }
-span {
-  @apply text-base font-normal tracking-wide
+span, .span {
+  @apply text-base tracking-wide
 }
 .caption {
-  @apply text-sm font-normal tracking-wide
+  @apply text-sm  tracking-wide
+}
+.container {
+  @apply p-2 md:p-0
 }

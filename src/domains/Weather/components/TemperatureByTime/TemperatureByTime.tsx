@@ -1,6 +1,7 @@
-import { Card } from 'components'
+import { Card, SnowCloudSun } from 'components'
+
 import { Fragment } from 'react'
-import snowCloudSun from '__assets__/snow-cloud-sun.svg'
+
 const TemperatureByTime = () => {
   const temperatureByTime = [
     { time: '11:00', temperature: 24 },
@@ -27,12 +28,12 @@ const TemperatureByTime = () => {
           <Card
             className="bg-sky-200 mr-1 rounded-3xl"
             key={`${index}-temperature-by-time`}>
-            <div className="flex flex-col gap-2">
-              <h6 className="text-gray-800">{item.time}</h6>
-              <img src={snowCloudSun} />
-              <span className="text-gray-800 caption">
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-gray-800 caption">{item.time}</span>
+              <SnowCloudSun size="32px" className="fill-gray-800" />
+              <h6 className="text-gray-800 caption font-bold">
                 {item.temperature}&deg;
-              </span>
+              </h6>
             </div>
           </Card>
         )
