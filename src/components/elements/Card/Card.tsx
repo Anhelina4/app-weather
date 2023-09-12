@@ -3,6 +3,7 @@ import { ReactNode } from 'react'
 interface CardProps {
   children?: ReactNode
   className?: string
+  style?: object
 }
 
 const Card = (props: CardProps) => {

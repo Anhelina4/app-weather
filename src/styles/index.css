@@ -41,8 +41,11 @@ h6, .h6 {
 span, .span {
   @apply text-base tracking-wide
 }
-.caption {
+.caption1 {
   @apply text-sm  tracking-wide
+}
+.caption2 {
+  @apply text-xs  tracking-wide
 }
 .container {
   @apply p-2 md:p-0
