@@ -25,10 +25,10 @@ const Dashboard = () => {
             ? 'repeat(4, minmax(min-content, 320px))'
             : 'repeat(2, minmax(min-content, 320px))'
         }}>
-        <div className="2xl:col-span-3">
+        <div className="2xl:col-span-2">
           <WeatherTimeline />
         </div>
-        <div className="2xl:col-span-1">
+        <div className="2xl:col-span-2">
           <Forecast />
         </div>
         <div className="2xl:col-span-2">
