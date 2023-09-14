@@ -1,7 +1,7 @@
 import { IconProps } from './Icon.type'
 
 const MistCloud = (props: IconProps) => {
-  const { className, size } = props
+  const { className, size = '' } = props
   return (
     <svg
       width={size}
