@@ -77,11 +77,11 @@ const CityWeatherList = (props: CityWeatherListProps) => {
   ]
 
   const containerWrap = flexWrap ? 'flex-wrap' : 'overflow-scroll'
-  const itemMarginTop = flexWrap ? 'mt-4' : ''
+  const itemMarginTop = flexWrap ? 'mt-4' : 'mt-6'
 
   return (
     <div>
-      <div className={`flex gap-4 ${containerWrap}`}>
+      <div className={`flex gap-4 ${containerWrap} pb-4`}>
         <div className={itemMarginTop}>
           <AddCard className={`w-40`}>
             <div className="flex flex-col gap-4 items-center">
@@ -94,7 +94,7 @@ const CityWeatherList = (props: CityWeatherListProps) => {
         </div>
 
         {items?.map((item, index) => (
-          <div className={itemMarginTop} key={index}>
+          <div className={`${itemMarginTop} `} key={index}>
             <CityWeatherItem data={item} className={`w-40 h-full`} />
           </div>
         ))}
