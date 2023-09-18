@@ -1,7 +1,12 @@
 import { AddCard } from 'components'
 import { CityWeatherItem } from 'domains/Weather/components'
 
-const CityWeatherList = () => {
+interface CityWeatherListProps {
+  flexWrap?: boolean
+}
+
+const CityWeatherList = (props: CityWeatherListProps) => {
+  const { flexWrap = false } = props
   const items = [
     {
       city: 'Lisbon',
@@ -70,20 +75,28 @@ const CityWeatherList = () => {
       maxTemperature: 24
     }
   ]
+
+  const containerWrap = flexWrap ? 'flex-wrap' : 'overflow-scroll'
+  const itemMarginTop = flexWrap ? 'mt-4' : ''
+
   return (
     <div>
-      <div className="flex gap-4 overflow-scroll pb-4 pt-6">
-        <AddCard className="w-40">
-          <div className="flex flex-col gap-4 items-center">
-            <h5 className="text-center">World forecast</h5>
-            <span className="caption2 text-center">
-              Add the cities you are interested in
-            </span>
-          </div>
-        </AddCard>
+      <div className={`flex gap-4 ${containerWrap}`}>
+        <div className={itemMarginTop}>
+          <AddCard className={`w-40`}>
+            <div className="flex flex-col gap-4 items-center">
+              <h5 className="text-center">World forecast</h5>
+              <span className="caption2 text-center">
+                Add the cities you are interested in
+              </span>
+            </div>
+          </AddCard>
+        </div>
 
         {items?.map((item, index) => (
-          <CityWeatherItem data={item} key={index} className="w-40" />
+          <div className={itemMarginTop} key={index}>
+            <CityWeatherItem data={item} className={`w-40 h-full`} />
+          </div>
         ))}
       </div>
     </div>

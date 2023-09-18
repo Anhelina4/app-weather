@@ -11,7 +11,7 @@ const CityWeatherItem = (props: CityWeatherItemProps) => {
   const { city, country, minTemperature, maxTemperature } = data || {}
 
   return (
-    <div className="relative">
+    <div className="relative h-full">
       <div
         className="rounded-full bg-sky-200 absolute -top-4 p-2"
         style={{ left: '60px' }}>
