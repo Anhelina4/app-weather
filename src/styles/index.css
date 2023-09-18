@@ -50,3 +50,12 @@ span, .span {
 .container {
   @apply p-2 md:p-0
 }
+input {
+  @apply block w-full border-0 py-1.5 px-4   ring-inset 
+  ring-gray-300 focus:ring-1 focus:ring-inset bg-gray-700
+   focus:ring-white sm:text-sm sm:leading-6
+}
+
+label {
+  @apply block text-sm font-medium leading-6
+}
