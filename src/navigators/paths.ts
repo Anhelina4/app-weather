@@ -4,7 +4,8 @@ const APP_PATHS = {
     PROFILE: 'profile'
   },
   auth: {
-    LOGIN: 'login'
+    LOGIN: 'login',
+    SIGN_UP: 'sign-up'
   }
 }
 
