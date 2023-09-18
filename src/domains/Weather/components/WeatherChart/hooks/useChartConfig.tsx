@@ -3,6 +3,9 @@ const useChartConfig = () => {
     chart: {
       id: 'weather-bar'
     },
+    tooltip: {
+      theme: 'dark'
+    },
     stroke: {
       show: true,
       curve: 'smooth',
